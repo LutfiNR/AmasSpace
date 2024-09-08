@@ -10,32 +10,32 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="/feature">
+          <Link href="/feature.html">
             Feature
           </Link>
         </li>
         <li>
-          <Link href="/download">
+          <Link href="/download.html">
             Download
           </Link>
         </li>
         <li>
-          <Link href="/pricing">
+          <Link href="/pricing.html">
             Pricing
           </Link>
         </li>
         <li>
-          <Link href="/blog">
+          <Link href="/blog.html">
             Blog
           </Link>
         </li>
         <li>
-          <Link href="/community">
+          <Link href="/community.html">
             Community
           </Link>
         </li>
         <li>
-          <Link href="/help-center">
+          <Link href="/help-center.html">
             Help Center
           </Link>
         </li>
