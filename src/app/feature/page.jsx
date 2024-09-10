@@ -4,6 +4,7 @@ import Card from '@/components/Card';
 import Headline from '@/components/Headline';
 import SwiperComponent from '@/components/SwiperComponent';
 import { Chip } from '@nextui-org/react';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Feature - AmasSpace',
@@ -136,7 +137,7 @@ export default function Feature() {
           </div>
         </div>
         <div className='flex justify-center lg:justify-end items-center'>
-          <img
+          <Image
             src='/decoration/preview.png'
             alt='character'
             className='max-w-xs md:max-w-sm lg:max-w-lg'
@@ -150,7 +151,7 @@ export default function Feature() {
         </Headline>
         <div className='grid grid-cols-1 md:grid-cols-2 mt-12 gap-6'>
           <div className='flex justify-center md:justify-start'>
-            <img
+            <Image
               src='/decoration/preview.png'
               alt=''
               className='w-3/4 md:w-full'
@@ -170,7 +171,7 @@ export default function Feature() {
               chip={<Chip color='primary'>How To</Chip>}
               srcImg='/thumbnail/thumbnail-5.png'
               title='How to Set Up Your Virtual Workspace in Amasspace'
-              content="Creating an effective virtual workspace is crucial for maintaining productivity and collaboration in a remote setting. In this guide, we'll walk you through the steps to set up your virtual workspace in Amasspace, customize it to fit your team's needs, and get started with your first project."
+              content="Creating an effective virtual workspace is crucial for maintaining productivity and collaboration in a remote setting. In this guide, we&#39;ll walk you through the steps to set up your virtual workspace in Amasspace, customize it to fit your team&#39;s needs, and get started with your first project."
             ></Card>
             <Card
               chip={<Chip color='secondary'>Tips & Tricks</Chip>}
@@ -190,7 +191,7 @@ export default function Feature() {
 
       <section className='py-8 px-4 md:py-12 md:px-12 lg:py-16 lg:px-24 bg-slate-50 grid grid-rows-2 gap-12'>
         <div className='flex justify-center items-end'>
-          <img
+          <Image
             src='/decoration/character.svg'
             alt='character'
             className='max-w-[50px] md:max-w-[75px] lg:max-w-[100px]'
@@ -198,7 +199,7 @@ export default function Feature() {
         </div>
         <div className='flex flex-col items-center text-center'>
           <h2 className='font-bold text-2xl md:text-3xl lg:text-4xl text-primary'>
-            Let's Collaborate with Your Creative Team
+            Let&#39;s Collaborate with Your Creative Team
           </h2>
           <div className='mt-6 flex gap-2 md:gap-4'>
             <Button

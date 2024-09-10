@@ -1,5 +1,6 @@
 import Button from '@/components/Button';
 import Headline from '@/components/Headline';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Download - AmasSpace',
@@ -18,7 +19,7 @@ export default function Download() {
       <div className='mt-8 md:mt-12 lg:mt-16 grid grid-cols-1 md:grid-cols-2 gap-8'>
         <div className='flex flex-col items-center'>
           <div className='flex justify-center items-center mb-6'>
-            <img
+            <Image
               src='/decoration/desktop.svg'
               alt='desktop'
               width={300}
@@ -41,7 +42,7 @@ export default function Download() {
         </div>
         <div className='flex flex-col items-center'>
           <div className='flex justify-center items-center mb-6'>
-            <img
+            <Image
               src='/decoration/mobile.svg'
               alt='mobile'
               width={280}

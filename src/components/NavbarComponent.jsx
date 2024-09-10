@@ -3,6 +3,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Button from '@/components/Button';
+import Image from 'next/image';
 
 export default function NavbarComponent() {
   const pathname = usePathname();
@@ -33,7 +34,7 @@ export default function NavbarComponent() {
     >
       <div className="container mx-auto flex items-center justify-between px-24 py-4">
         <Link href="/">
-          <img
+          <Image
             src="/sm-logo-typography.svg"
             alt="Amasspace Logo"
             className="h-10 w-auto"

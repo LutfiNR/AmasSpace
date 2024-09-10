@@ -58,7 +58,7 @@ export default function Home() {
               <div key={i} className='flex flex-col gap-8 lg:gap-12'>
                 {group.map((need, index) => (
                   <div key={index} className='flex w-52 gap-4 md:w-auto md:gap-6 items-center'>
-                    <img src={need.icon} alt={need.description} width={48} height={48} />
+                    <Image src={need.icon} alt={need.description} width={48} height={48} />
                     <span className='text-slate-100 text-sm md:text-base'>{need.description}</span>
                   </div>
                 ))}
@@ -122,7 +122,7 @@ export default function Home() {
           </div>
         </div>
         <div className='flex justify-center items-end'>
-          <img src='/decoration/character.svg' alt='character' width={300} height={300} className='w-1/2' />
+          <Image src='/decoration/character.svg' alt='character' width={300} height={300} className='w-1/2' />
         </div>
       </section>
     </>
@@ -152,7 +152,7 @@ const Experience = ({ title, description, srcImg, swap = true }) => {
   return (
     <div className='grid grid-cols-1  lg:grid-cols-2 mt-16 md:mt-32'>
       <div className={`flex ${swap ? 'lg:order-2' : ' '} justify-center items-center p-6`}>
-        <img src={srcImg} alt={title} width={400} height={300} className='w-full md:w-3/4 lg:w-10/12' />
+        <Image src={srcImg} alt={title} width={400} height={300} className='w-full md:w-3/4 lg:w-10/12' />
       </div>
       <div className='text-black-light p-2 md:p-6 flex flex-col justify-center'>
         <h2 className='font-semibold text-2xl md:text-4xl'>{title}</h2>

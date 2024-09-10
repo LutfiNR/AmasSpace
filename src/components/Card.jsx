@@ -1,12 +1,13 @@
 "use client"
 import {Chip} from "@nextui-org/react";
+import Image from "next/image";
 
 const Card = ({ chip, srcImg, title, content }) => {
   return (
     <div className="pb-4">
       <div className='overflow-hidden rounded-xl border shadow-md'>
       <div className='flex flex-col shadow-md'>
-        <img
+        <Image
           src={srcImg}
           alt={title}
           width={160}
