@@ -44,7 +44,7 @@ export default function NavbarComponent() {
           <Link
             href="/feature.html"
             className={
-              pathname === '/feature.html'
+              pathname === '/feature'
                 ? 'text-primary font-bold'
                 : 'text-black-light'
             }
@@ -54,7 +54,7 @@ export default function NavbarComponent() {
           <Link
             href="/download.html"
             className={
-              pathname === '/download.html'
+              pathname === '/download'
                 ? 'text-primary font-bold'
                 : 'text-black-light'
             }
@@ -64,7 +64,7 @@ export default function NavbarComponent() {
           <Link
             href="/pricing.html"
             className={
-              pathname === '/pricing.html'
+              pathname === '/pricing'
                 ? 'text-primary font-bold'
                 : 'text-black-light'
             }
@@ -74,7 +74,7 @@ export default function NavbarComponent() {
           <Link
             href="/blog.html"
             className={
-              pathname === '/blog.html'
+              pathname === '/blog'
                 ? 'text-primary font-bold'
                 : 'text-black-light'
             }
@@ -84,7 +84,7 @@ export default function NavbarComponent() {
           <Link
             href="/help-center.html"
             className={
-              pathname === '/help-center.html'
+              pathname === '/help-center'
                 ? 'text-primary font-bold'
                 : 'text-black-light'
             }
