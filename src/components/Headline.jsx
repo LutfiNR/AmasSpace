@@ -17,12 +17,12 @@ const Headline = ({ children, variant }) => {
     <div className='flex flex-col items-center py-6 overflow-hidden'>
       {variant && (
         <motion.h1
-        initial={{ opacity: 0, }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, ease: 'easeOut' }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
           className={`${
             variants[variant].color || variants.default.color
-          } text-4xl font-bold inline overflow-hidden`}>
+          } text-3xl sm:text-4xl md:text-5xl font-bold inline overflow-hidden text-center`}>
           {children}
           <motion.div
             initial={{ width: 0, transformOrigin: 'center' }}
@@ -30,7 +30,8 @@ const Headline = ({ children, variant }) => {
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className={`${
               variants[variant].bg || variants.default.bg
-            } w-full h-1 mt-2 my-0 mx-auto rounded`}></motion.div>
+            } w-full h-1 mt-2 my-0 mx-auto rounded`}
+          ></motion.div>
         </motion.h1>
       )}
     </div>

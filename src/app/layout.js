@@ -1,5 +1,5 @@
+import NavbarComponent from "../components/NavbarComponent.jsx";
 import "./globals.css";
-import Navbar from "../components/Navbar.jsx";
 
 export default function RootLayout({ children }) {
   return (
@@ -10,10 +10,10 @@ export default function RootLayout({ children }) {
       <body
         className='antialised'
       >
-        <Navbar/>
-        <main>
-          {children}
-        </main>
+          <NavbarComponent />
+          <main>
+            {children}
+          </main>
       </body>
     </html>
   );
