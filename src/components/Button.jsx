@@ -4,10 +4,20 @@ const variants={
         color:'text-slate-50',
         border:'border-none',
     },
+    secondary:{
+        bg:'primary',
+        color:'text-slate-50',
+        border:'border-none',
+    },
     secondaryOutline:{
-        bg:'slate-50',
+        bg:'none',
         color:'text-primary',
         border:'border border-primary',
+    },
+    whiteOutline:{
+        bg:'none',
+        color:'text-slate-50',
+        border:'border border-slate-50',
     }
 
 }

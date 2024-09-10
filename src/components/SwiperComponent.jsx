@@ -22,9 +22,10 @@ const SwiperComponent = ({ children }) => {
           slidesPerView: 2,
         },
         1025: {
-          slidesPerView: 3,
+          slidesPerView:3,
         },
       }}
+      className='pb-4'
       >
       {item.map((item, index) => (
         <SwiperSlide key={index} className=''>{item}</SwiperSlide>

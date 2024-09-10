@@ -1,10 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+const {nextui} = require("@nextui-org/react");
 
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
@@ -25,8 +27,13 @@ module.exports = {
       backgroundImage:{
         gradientOne: "linear-gradient(90deg, rgba(52,102,139,0.6) 0%, rgba(52,102,139,1) 20%, rgba(52,102,139,1) 50%, rgba(52,102,139,1) 80%, rgba(52,102,139,0.6) 100%)"
 
+      },
+      fontFamily:{
+        saira: ['Saira Stencil One', 'systtem-ui'],
+        opensans: ['Open Sans', 'systtem-ui']
       }
     },
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [nextui()]
 };

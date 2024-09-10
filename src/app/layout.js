@@ -1,5 +1,6 @@
 import NavbarComponent from "../components/NavbarComponent.jsx";
 import "./globals.css";
+import {NextUIProvider} from "@nextui-org/react";
 
 export default function RootLayout({ children }) {
   return (
@@ -10,10 +11,12 @@ export default function RootLayout({ children }) {
       <body
         className='antialised'
       >
+        <NextUIProvider>
           <NavbarComponent />
-          <main>
+          <main className="font-opensans">
             {children}
           </main>
+        </NextUIProvider>
       </body>
     </html>
   );
