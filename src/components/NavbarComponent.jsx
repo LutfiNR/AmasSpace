@@ -33,20 +33,27 @@ export default function NavbarComponent() {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-24 py-4">
-        <Link href="/">
+        <Link href="/"
+        className={
+          pathname === '/'
+            ? 'text-primary font-bold'
+            : 'text-black-light'
+        }>
           <Image
             src="/sm-logo-typography.svg"
             alt="Amasspace Logo"
             className="h-10 w-auto"
+            width={100}
+            height={100}
+            priority
           />
         </Link>
         <div className="flex gap-6">
           <Link
             href="/feature.html"
-            className={
-              pathname === '/feature'
+            className={` ${pathname === '/feature'
                 ? 'text-primary font-bold'
-                : 'text-black-light'
+                : 'text-black-light'}` 
             }
           >
             Feature
@@ -92,7 +99,10 @@ export default function NavbarComponent() {
             Help Center
           </Link>
         </div>
-        <div>
+        <div className='flex gap-4'>
+        <Button size="px-4 py-2 text-sm" variant="secondaryOutline">
+          Gontact Us
+        </Button>
         <Button size="px-4 py-2 text-sm" variant="primary">
           Get Started
         </Button>

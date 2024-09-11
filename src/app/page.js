@@ -133,8 +133,10 @@ export default function Home() {
 const Review = ({ srcImg, name, review, job }) => {
   return (
     <div className='pb-4'>
-      <div className='flex flex-col gap-4 md:gap-6 p-4 md:p-6 lg:p-8 items-start overflow-hidden rounded-xl shadow-lg border'>
+      <div className=' flex flex-col gap-4 md:gap-6 p-4 md:p-6 lg:p-8 items-start overflow-hidden rounded-xl shadow-lg border'>
+        <div className='h-48 md:h-64 lg:h-64'>
         <p className='text-black-dark text-sm md:text-lg'><q>{review}</q></p>
+        </div>
         <div className='flex gap-2 items-center mt-8'>
           <Avatar isBordered color="primaryy" src={srcImg} />
           <div className='flex flex-col justify-center'>
