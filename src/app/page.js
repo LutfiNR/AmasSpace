@@ -12,15 +12,15 @@ export const metadata = {
 const needs = [
   [
     { icon: '/icon/sharescreen.svg', description: 'Share Screen' },
-    { icon: '/icon/sharescreen.svg', description: 'Chatting With Other' },
-    { icon: '/icon/sharescreen.svg', description: 'Meet With Video' },
-    { icon: '/icon/sharescreen.svg', description: 'Scheduling' },
+    { icon: '/icon/chat.svg', description: 'Chatting With Other' },
+    { icon: '/icon/video.svg', description: 'Meet With Video' },
+    { icon: '/icon/calendar.svg', description: 'Scheduling' },
   ],
   [
-    { icon: '/icon/sharescreen.svg', description: 'Manage Team Project' },
-    { icon: '/icon/sharescreen.svg', description: 'Custom Avatar' },
-    { icon: '/icon/sharescreen.svg', description: 'Google Integration' },
-    { icon: '/icon/sharescreen.svg', description: 'And More' },
+    { icon: '/icon/task.svg', description: 'Manage Team Project' },
+    { icon: '/icon/custom.svg', description: 'Custom Avatar' },
+    { icon: '/icon/google.svg', description: 'Google Integration' },
+    { icon: '/icon/more.svg', description: 'And More' },
   ]
 ];
 
@@ -29,7 +29,9 @@ export default function Home() {
     <>
       {/* Experience Section */}
       <section className=' px-4 py-8 md:px-12 md:py-12 lg:px-24 lg:py-16 bg-slate-50'>
+        <div className='pt-8'>
         <Headline variant="default" className="text-2xl md:text-4xl lg:text-5xl">FEEL NEW EXPERIENCES</Headline>
+        </div>
         <Experience
           title='Unified Communication'
           description='Amasspace offers a centralized communication hub where conversations, project updates, and creative ideas flow seamlessly, ensuring everyone stays connected.'
@@ -134,7 +136,7 @@ const Review = ({ srcImg, name, review, job }) => {
   return (
     <div className='pb-4'>
       <div className=' flex flex-col gap-4 md:gap-6 p-4 md:p-6 lg:p-8 items-start overflow-hidden rounded-xl shadow-lg border'>
-        <div className='h-48 md:h-64 lg:h-64'>
+        <div className='h-28 md:h-64 lg:h-64'>
         <p className='text-black-dark text-sm md:text-lg'><q>{review}</q></p>
         </div>
         <div className='flex gap-2 items-center mt-8'>

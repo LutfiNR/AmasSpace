@@ -1,3 +1,5 @@
+import Headline from "@/components/Headline";
+
 export const metadata = {
     title: "Pricing - AmasSpace",
     description: "Pricing page of AmasSpace",
@@ -6,10 +8,15 @@ export const metadata = {
   
   export default function Home() {
     return (
-      <div>
-        <h1 className="text-3xl font-bold">Welcome to the Pricing Page</h1>
-        <p>This is the home page of the app.</p>
+      <section className='px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-24 bg-slate-50 '>
+      <div className='pt-24 lg:pt-4'>
+      <Headline
+        variant='default'
+        className='text-xl md:text-3xl lg:text-4xl xl:text-5xl'>
+        Pricing
+      </Headline>
       </div>
+      </section>
     );
   }
   

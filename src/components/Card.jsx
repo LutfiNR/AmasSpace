@@ -38,7 +38,7 @@ const Card = ({ chip, srcImg, title, content, variant }) => {
           alt={title}
           width={400}
           height={400}
-          className="w-full h-full object-cover"
+          className="w-full h-full max-h-[228px] object-cover"
         />
         <div className='flex flex-col justify-between p-6'>
         <div>

@@ -24,7 +24,7 @@ const faq = [
     },
     {
       question: 'What features does AmasSpace offer?',
-      answer: 'Amasspace offers a variety of features to help teams work together more efficiently and enjoy a more engaging experience. Some of the key features include: 1. Customizable avatars and pixel art workspaces 2. Interactive 2D environments 3. Text and voice chat 4. Video conferencing 5. Team-specific rooms 6. Brainstorming tools',
+      answer: 'Amasspace offers a variety of features to help teams work together more efficiently and enjoy a more engaging experience. Some of the key features include: Customizable avatars and pixel art workspaces, Interactive 2D environments, Text and voice chat,Video conferencing, Team-specific rooms, Brainstorming tools',
     },
   ],
   [
@@ -79,7 +79,7 @@ export default function Help() {
 const Card = ({ srcImg, category }) => {
   return (
     <div className='flex flex-col gap-4 justify-center items-center text-center'>
-      <div className='flex justify-center items-center p-6 h-24 md:h-32'>
+      <div className='flex justify-center items-center p-6 h-32 md:h-32'>
         <Image src={srcImg} alt={category} width={80} height={80} className='w-auto h-full drop-shadow-lg' />
       </div>
       <p className='font-semibold text-sm md:text-lg text-black-light'>{category}</p>
