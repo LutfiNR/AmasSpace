@@ -31,13 +31,15 @@ export default function Download() {
           </div>
           <div className='flex flex-col items-center gap-4 w-1/2'>
             <Button
+            href='#'
               variant='secondary'
-              size='w-full md:w-1/2 py-3'>
+              size='w-32 md:w-40 py-3'>
               Windows
             </Button>
             <Button
+            href='#'
               variant='secondary'
-              size='w-full md:w-1/2 py-3'>
+              size='w-32 md:w-40 py-3'>
               Mac Os
             </Button>
           </div>
@@ -54,13 +56,17 @@ export default function Download() {
           </div>
           <div className='flex flex-col items-center gap-4 w-1/2'>
             <Button
+            href='#'
+
               variant='secondary'
-              size='w-full md:w-1/2 py-3'>
+              size='w-32 md:w-40 py-3'>
               Android
             </Button>
             <Button
+            href='#'
+
               variant='secondary'
-              size='w-full md:w-1/2 py-3'>
+              size='w-32   md:w-40 py-3'>
               iOS
             </Button>
           </div>
