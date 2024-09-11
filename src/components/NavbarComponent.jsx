@@ -70,6 +70,17 @@ export default function NavbarComponent() {
       <NavbarContent
         className='hidden lg:flex gap-4'
         justify='center'>
+          <NavbarItem>
+          <Link
+            href='/'
+            className={
+              pathname === '/'
+                ? 'text-primary font-bold'
+                : 'text-black-light'
+            }>
+            Home
+          </Link>
+        </NavbarItem>
         <NavbarItem>
           <Link
             href='/feature.html'
@@ -129,6 +140,7 @@ export default function NavbarComponent() {
       <NavbarContent justify='end' className='hidden lg:flex'>
         <NavbarItem className='hidden lg:flex'>
           <Button
+          href='/download.html'
             variant='primary'
             size='px-3 py-2 md:px-4 md:py-2 text-sm'>
             Get Started

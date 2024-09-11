@@ -1,13 +1,13 @@
+"use client"
 import Image from 'next/image';
 import Headline from '../components/Headline';
 import SwiperComponent from '@/components/SwiperComponent';
 import Button from '@/components/Button';
 import { Avatar } from "@nextui-org/react";
+import { motion } from 'framer-motion';
+import Decoration from '@/components/Decoration';
 
-export const metadata = {
-  title: "Home - AmasSpace",
-  description: "Home page of AmasSpace",
-};
+
 
 const needs = [
   [
@@ -27,6 +27,48 @@ const needs = [
 export default function Home() {
   return (
     <>
+    <motion.div className="relative flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-100 to-secondary">
+  <Tagline />
+  <SubHeadline />
+  <Laptop />
+
+  {/* Graph Decoration */}
+  <Decoration
+    src="/decoration/graph.svg"
+    alt="graph"
+    position="top-5 left-10 sm:left-32 md:left-64"
+    size="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-24 lg:h-24"
+  />
+
+  {/* Clock Decoration */}
+  <Decoration
+    src="/decoration/clock.svg"
+    alt="clock"
+    position="top-5 right-10 sm:right-16 md:right-20"
+    size="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-24 lg:h-24"
+    delay={0.4}
+  />
+
+  {/* Diagram Decoration */}
+  <Decoration
+    src="/decoration/diagram.svg"
+    alt="diagram"
+    position="-bottom-16 left-10 sm:left-16 md:left-20"
+    size="w-16 h-16 sm:w-24 sm:h-24 md:w-36 md:h-36 lg:w-56 lg:h-56"
+    delay={0.4}
+  />
+
+  {/* Note Decoration */}
+  <Decoration
+    src="/decoration/note.svg"
+    alt="note"
+    position="bottom-0 right-10 sm:right-16 md:right-20"
+    size="w-16 h-16 sm:w-24 sm:h-24 md:w-36 md:h-36 lg:w-56 lg:h-56"
+    delay={0.8}
+  />
+</motion.div>
+
+
       {/* Experience Section */}
       <section className=' px-4 py-8 md:px-12 md:py-12 lg:px-24 lg:py-16 bg-slate-50'>
         <div className='pt-8'>
@@ -35,7 +77,7 @@ export default function Home() {
         <Experience
           title='Unified Communication'
           description='Amasspace offers a centralized communication hub where conversations, project updates, and creative ideas flow seamlessly, ensuring everyone stays connected.'
-          srcImg='/unified-communication.svg'
+          srcImg='/preview.svg'
         />
         <Experience
           swap={false}
@@ -119,8 +161,8 @@ export default function Home() {
         <div className='py-8 px-4 md:py-12 md:px-12 lg:py-16 lg:px-24'>
           <h2 className='font-bold text-3xl md:text-4xl lg:text-5xl text-primary'>Lets Collaborate with Your Creative Team</h2>
           <div className='mt-6 flex gap-2 md:gap-4'>
-            <Button variant='secondaryOutline' size='px-4 py-2 md:px-6 md:py-3'>View Pricing</Button>
-            <Button variant='primary' size='px-4 py-2 md:px-6 md:py-3'>Get Started</Button>
+            <Button href='/pricing.html' variant='secondaryOutline' size='px-4 py-2 md:px-6 md:py-3'>View Pricing</Button>
+            <Button href='/download.html' variant='primary' size='px-4 py-2 md:px-6 md:py-3'>Get Started</Button>
           </div>
         </div>
         <div className='flex justify-center items-end'>
@@ -165,3 +207,46 @@ const Experience = ({ title, description, srcImg, swap = true }) => {
     </div>
   );
 }
+
+const Tagline = () => {
+  return (
+    <motion.h1
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      data-scroll
+      data-scroll-speed='2'
+      className='text-8xl text-center font-saira text-primary drop-shadow-lg'>
+      YOUR CREATIVE SPACE
+    </motion.h1>
+  );
+};
+const SubHeadline = () => {
+  return (
+    <motion.p
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.2 }}
+      data-scroll
+      data-scroll-speed='1'
+      className='text-lg text-center text-gray-100 font-bold drop-shadow-lg font-opensans'>
+      ENTER A VIRTUAL ROOM WHERE COLLABORATION MEETS CREATIVITY.
+    </motion.p>
+  );
+};
+
+const Laptop = () => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, delay: 0.4 }}
+      className='sm:block w-1/2 mx-auto'>
+      <img
+        src='/decoration/desktop.svg'
+        alt='laptop'
+        className='object-cover w-full h-full'
+      />
+    </motion.div>
+  );
+};

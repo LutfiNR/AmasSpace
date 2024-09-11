@@ -1,3 +1,4 @@
+"use client"
 import AccordionComponent from '@/components/Accordion';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
@@ -5,11 +6,6 @@ import Headline from '@/components/Headline';
 import SwiperComponent from '@/components/SwiperComponent';
 import { Chip } from '@nextui-org/react';
 import Image from 'next/image';
-
-export const metadata = {
-  title: 'Feature - AmasSpace',
-  description: 'Feature page of AmasSpace',
-};
 
 const features = [
   {
@@ -125,11 +121,13 @@ export default function Feature() {
           </div>
           <div className='mt-6 flex gap-2 md:gap-4'>
             <Button
+            href='/pricing.html'
               variant='whiteOutline'
               size='px-4 py-2 md:px-6 md:py-3 text-sm md:text-base lg:text-lg'>
               View Pricing
             </Button>
             <Button
+            href='/download.html'
               variant='primary'
               size='px-4 py-2 md:px-6 md:py-3 text-sm md:text-base lg:text-lg'>
               Get Started
@@ -209,11 +207,13 @@ export default function Feature() {
           </h2>
           <div className='mt-6 flex gap-2 md:gap-4'>
             <Button
+            href='/pricing.html'
               variant='secondaryOutline'
               size='px-3 py-2 md:px-4 md:py-2 text-sm'>
               View Pricing
             </Button>
             <Button
+            href='/download.html'
               variant='primary'
               size='px-3 py-2 md:px-4 md:py-2 text-sm'>
               Get Started

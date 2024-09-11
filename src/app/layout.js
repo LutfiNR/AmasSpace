@@ -3,6 +3,11 @@ import NavbarComponent from "../components/NavbarComponent.jsx";
 import "./globals.css";
 import {NextUIProvider} from "@nextui-org/react";
 
+export const metadata = {
+  title: "AmasSpace",
+  description: "A Creatice Collaboration Workspace",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

@@ -22,11 +22,13 @@ const variants={
 
 }
 
-const Button = ({children,variant, size}) =>{
+const Button = ({children,variant, size,href}) =>{
     return(
-        <button className={`bg-${variants[variant].bg} ${variants[variant].color} ${variants[variant].border} ${size} rounded-lg`}>
+        <a href={href}>
+            <button className={`bg-${variants[variant].bg} ${variants[variant].color} ${variants[variant].border} ${size} rounded-lg`}>
             {children}
         </button>
+        </a>
     )
 }
 
