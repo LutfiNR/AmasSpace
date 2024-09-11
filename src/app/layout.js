@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer.jsx";
 import NavbarComponent from "../components/NavbarComponent.jsx";
 import "./globals.css";
 import {NextUIProvider} from "@nextui-org/react";
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
           <main className="font-opensans">
             {children}
           </main>
+          <Footer></Footer>
         </NextUIProvider>
       </body>
     </html>

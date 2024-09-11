@@ -13,12 +13,10 @@ export default function Blog() {
  
 
   return (
-    <section className='flex flex-col gap-12 md:gap-16 pt-12 md:pt-16 px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-24 bg-slate-50'>
-      <div className=''>
+    <section className='flex flex-col gap-12 md:gap-16 px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-24 bg-slate-50'>
       <Headline variant='default' className='text-2xl md:text-4xl lg:text-5xl'>
           BLOG
         </Headline>
-      </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
         <div className='col-span-1 md:col-span-2 lg:col-span-4'>
           <Card

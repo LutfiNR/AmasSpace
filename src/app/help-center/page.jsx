@@ -20,21 +20,43 @@ const faq = [
   [
     {
       question: 'What is AmasSpace?',
-      answer: 'Amasspace is a virtual workspace that enables teams to collaborate, share files, and create a seamless project management experience. Our goal is to create a platform that fosters collaboration and innovation while providing a unique and engaging experience for users.',
+      answer: 'Amasspace is a creative collaboration app designed like a 2D game, simulating an office environment. It includes features such as meetings, chat, task management, and a shared workspace for teamwork.',
     },
     {
-      question: 'What features does AmasSpace offer?',
-      answer: 'Amasspace offers a variety of features to help teams work together more efficiently and enjoy a more engaging experience. Some of the key features include: Customizable avatars and pixel art workspaces, Interactive 2D environments, Text and voice chat,Video conferencing, Team-specific rooms, Brainstorming tools',
+      question: 'Which platforms does Amasspace support?',
+      answer: 'Amasspace is available on Android, iOS, Windows, and macOS.',
+    },
+    {
+      question: 'Can I conduct video meetings in Amasspace?',
+      answer: 'Yes, Amasspace offers a video meeting feature, allowing you to collaborate visually in a virtual room.',
+    },{
+      question: 'Does Amasspace support task management?',
+      answer: 'Yes, Amasspace provides task management features that allow you to create, manage, and track the progress of tasks within your team.',
+    },{
+      question: 'Can Amasspace be used offline?',
+      answer: 'Some features in Amasspace may be limited or unavailable offline, as it relies on cloud-based services.',
     },
   ],
   [
     {
-      question: 'What is AmasSpace?',
-      answer: 'Amasspace is a virtual workspace that enables teams to collaborate, share files, and create a seamless project management experience. Our goal is to create a platform that fosters collaboration and innovation while providing a unique and engaging experience for users.',
+      question: 'Is Amasspace free to use?',
+      answer: 'Amasspace offers a free version with basic features, but also provides subscription options for accessing premium features.',
     },
     {
-      question: 'What features does AmasSpace offer?',
-      answer: 'Amasspace offers a variety of features to help teams work together more efficiently and enjoy a more engaging experience. Some of the key features include: 1. Customizable avatars and pixel art workspaces 2. Interactive 2D environments 3. Text and voice chat 4. Video conferencing 5. Team-specific rooms 6. Brainstorming tools',
+      question: 'How do I join a workspace in Amasspace?',
+      answer: 'You can join a workspace via an invitation link provided by the workspace owner or admin.',
+    },
+    {
+      question: 'How do I download and install Amasspace on my device?',
+      answer: 'You can download Amasspace from Google Play for Android, the App Store for iOS, and the official website for Windows and macOS versions.',
+    },
+    {
+      question: 'Does Amasspace support integration with other apps?',
+      answer: 'Yes, Amasspace supports integration with various third-party collaboration and productivity apps, such as Google Drive and Trello.',
+    },
+    {
+      question: 'How can I contact Amasspace customer support?',
+      answer: 'You can reach Amasspace customer support through the contact form on the official website or via the support email provided in the app.',
     },
   ],
 ];
@@ -51,7 +73,7 @@ export default function Help() {
           className='object-cover absolute mix-blend-multiply w-full -z-10 h-full'
         />
         <div className='px-4 py-8 md:px-12 md:py-12 lg:px-16 lg:py-16 bg-gradientOne'>
-          <h1 className='font-saira text-2xl md:text-3xl lg:text-4xl text-slate-50 text-center mt-16 mb-8 pt-12'>
+          <h1 className='font-saira text-2xl md:text-3xl lg:text-4xl text-slate-50 text-center mt-16 mb-8'>
             Get Answers, Find Solutions, Collaborate Better
           </h1>
         </div>
